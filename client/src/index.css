@@ -1,13 +1,236 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid green;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.recordheader{
+  color:#DAA520;
+  font-size: 5.5em;
+  font-family: Garamond, serif;
+  text-align: center;
 }
+
+.searchbar {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  color:white;
+}
+.searchTerm {
+  width: 50%;
+  border: 3px solid white;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  color: #9dbfaf;
+}
+.searchTerm:focus {
+  color: #1B4B43;
+}
+
+header a,
+header button {
+  font-size: 1rem;
+  display: inline-block;
+  background-color: #DAA520;
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: #1B4B43;
+  cursor: pointer;
+  border-radius: 12px;
+  width: 80%;
+  
+  
+ 
+
+}
+.loginTitle{
+  font-size: 5.5em;
+  background-color: brown;
+  color:white;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+}
+.signPage{
+  
+  background-image: url("https://c1.wallpaperflare.com/preview/646/903/708/vinyl-lp-record-angle.jpg");
+  background-size: 300px;
+}
+main {
+  margin: 1rem;
+}
+
+form {
+  background-color: brown;
+  border: 1px solid salmon;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+  padding: 0 1rem 1rem;
+  color:white;
+}
+.loginPic{
+  -webkit-box-reflect: right;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+form input {
+  margin: 0.25rem 0;
+}
+
+form button[type="submit"] {
+  border-radius: 50%;
+  width: 20%;
+}
+.signInbutton{
+  border-radius: 50%;
+}
+.loginButton{
+  border-radius: 50%;
+}
+/* .backgroundLogin{
+  background-size: cover;
+  background-image: url("https://c1.wallpaperflare.com/preview/646/903/708/vinyl-lp-record-angle.jpg=");
+} */
+
+.signIn{
+  background-color: brown;
+  color:white;
+}
+.logIn{
+  text-align: center;
+  background-color: brown;
+  color:white;
+  
+}
+/* .recordcontainer {
+  background-color: #ffde59;
+  text-align: center;
+  
+} */
+.cards {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 15em;
+  width: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  color:white;
+  
+}
+
+.card {
+  flex: 0 2 24%;
+  
+}
+
+.userCards{
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 15em;
+  width: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.userCard {
+  flex: 0 1 24%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.profilepic{
+  color: black;
+  font-family: "Georgia";
+  border: 10px solid #83cbef;
+  text-align: center;
+  border-radius: 50%;
+  width: 200px;
+  height:200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+}
+.addButton{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.deleteButton{
+  background-color: blue; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.deleteButton:hover{
+  background-color: red; 
+  color: black; 
+  border: 2px solid #f44336;
+}
+.recordcontainer{
+  background-color:#1B4B43;
+}
+.loginPic{
+  width: 300px;
+  height:300px;
+
+}
+.card{
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  
+}
+
+.cardPic{
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.greeting{
+  text-align: center;
+  color: white;
+  font-size: 3.5em;
+}
+.reviewsContainer{
+  
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgba(218, 265, 32, 0.2);
+}
+.editRecord{
+  background-color: #DAA520;
+}
+
